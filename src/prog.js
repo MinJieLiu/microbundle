@@ -58,11 +58,15 @@ export default handler => {
 		.option('--sourcemap', 'Generate source map')
 		.example("watch --no-sourcemap # don't generate sourcemaps")
 		.option('--raw', 'Show raw byte size', false)
-		.option('--jsx', 'A custom JSX pragma like React.createElement', 'h')
+		.option(
+			'--jsx',
+			'A custom JSX pragma like React.createElement',
+			'React.createElement',
+		)
 		.option(
 			'--jsxFragment',
 			'A custom JSX fragment pragma like React.Fragment',
-			'Fragment',
+			'React.Fragment',
 		)
 		.option(
 			'--jsxImportSource',

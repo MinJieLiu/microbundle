@@ -77,7 +77,7 @@ export default () => {
 						},
 						!customOptions.jsxImportSource && {
 							name: '@babel/plugin-transform-react-jsx',
-							pragma: customOptions.pragma || 'h',
+							pragma: customOptions.pragma || 'React.createElement',
 							pragmaFrag: customOptions.pragmaFrag || 'Fragment',
 						},
 						!customOptions.typescript && {

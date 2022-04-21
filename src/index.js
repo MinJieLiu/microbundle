@@ -488,7 +488,6 @@ function createConfig(options, entry, format, writeMeta) {
 							options.css !== 'inline' &&
 							options.output.replace(EXTENSION, '.css'),
 						minimize: options.compress,
-						sourceMap: options.sourcemap && options.css !== 'inline',
 					}),
 					moduleAliases.length > 0 &&
 						alias({
